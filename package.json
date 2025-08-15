@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:agrova": "npm run cypress:run -- --spec cypress/e2e/0-agrova/**/* --browser chrome"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/EricHorn42/curso-cypress/issues"
   },
-  "homepage": "https://github.com/EricHorn42/curso-cypress#readme"
+  "homepage": "https://github.com/EricHorn42/curso-cypress#readme",
+  "dependencies": {
+    "cypress": "^14.5.4",
+    "cypress-xpath": "^2.0.1",
+    "dayjs": "^1.11.13"
+  }
 }
